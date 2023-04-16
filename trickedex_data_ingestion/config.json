@@ -1,0 +1,27 @@
+{
+  "name": "Trickdex Data Ingestion",
+  "type": "app",
+  "categories": [
+    "development"
+  ],
+  "description": "used to ingest data from Trickedex.app",
+  "docker_image": "supervisely/base-py-sdk:6.36.0",
+  "main_script": "src/main.py",
+  "task_location": "application_sessions",
+  "isolate": true,
+  "integrated_into": ["standalone", "image_annotation_tool","video_annotation_tool"],
+  "icon": "https://img.icons8.com/color/96/000000/infinity.png",
+  "icon_background": "#FFFFFF",
+  "session_tags": [
+    "deployed_nn",
+    "deployed_nn_cls",
+    "deployed_nn_3d",
+    "sly_video_tracking",
+    "sly_smart_annotation",
+    "deployed_nn_embeddings",
+    "sly_point_cloud_tracking",
+    "deployed_nn_recommendations",
+    "labeling_jobs",
+    "sly_interpolation"
+  ]
+}
