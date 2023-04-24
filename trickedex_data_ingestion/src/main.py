@@ -16,6 +16,7 @@ def main():
 
     workspace_id = sly.env.workspace_id()
     project = api.project.create(workspace_id,"Tricks",type=sly.ProjectType.VIDEOS, change_name_if_conflict=True)
+    dataset = api.dataset.create(project.id,"Combos")
     print(project)
 
 
